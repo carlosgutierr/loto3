@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Lotto2019Pic3ModelStoreContainer" CdmEntityContainer="Lotto2019Pic3Entities">
+    <EntitySetMapping Name="lottoHistories">
+      <EntityTypeMapping TypeName="Lotto2019Pic3Model.lottoHistory">
+        <MappingFragment StoreEntitySet="lottoHistories">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Mid_Day" ColumnName="Mid_Day" />
+          <ScalarProperty Name="Pk1" ColumnName="Pk1" />
+          <ScalarProperty Name="Pk2" ColumnName="Pk2" />
+          <ScalarProperty Name="Pk3" ColumnName="Pk3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

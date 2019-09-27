@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Lotto2019Pic3Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="lottoHistories">
+    <Key>
+      <PropertyRef Name="Date" />
+    </Key>
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Mid_Day" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="Pk1" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="Pk2" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="Pk3" Type="varchar" MaxLength="2" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Lotto2019Pic3ModelStoreContainer">
+    <EntitySet Name="lottoHistories" EntityType="Self.lottoHistories" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

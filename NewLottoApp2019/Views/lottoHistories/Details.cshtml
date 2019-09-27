@@ -1,0 +1,50 @@
+﻿@model NewLottoApp2019.Models.lottoHistory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>lottoHistory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Mid_Day)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mid_Day)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pk1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pk1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pk2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pk2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pk3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pk3)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Date }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
